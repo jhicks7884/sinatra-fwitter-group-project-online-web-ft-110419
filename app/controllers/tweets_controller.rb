@@ -73,7 +73,7 @@ class TweetsController < ApplicationController
         @tweet = Tweet.find_by_id(params[:id])
         @tweet.delete
         redirect to '/tweets'
-      end
+    
     end
   end
 
