@@ -7,7 +7,7 @@
       <%= tweet.content %>
     </li>
 
-    <form action="/deliveries/<%=current_user.id%>/delete" method="post"> <br>  
+    <form action="/deliveries/<%=current_user.id%>/delete" method="post"> <br>
      <input type="hidden" name="_method" value="delete" id='hidden'>
      <input type="submit" value="Delete deliveries">
     </form>
