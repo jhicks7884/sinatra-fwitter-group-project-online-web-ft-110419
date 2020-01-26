@@ -5,10 +5,10 @@
   <% Tweet.all.each do |tweet| %>
     <li>
       <%= tweet.content %>
-      <a href="/tweets/<%=tweets.id%>">show</a>
+      <a href="/tweet/<%=tweets.id%>">show</a>
     </li>
 
-    <form action="/tweets/<%=current_user.id%>/delete" method="post"> <br>
+    <form action="/tweet/<%=current_user.id%>/delete" method="post"> <br>
      <input type="hidden" name="_method" value="delete" id='hidden'>
      <input type="submit" value="Delete tweets">
     </form>
