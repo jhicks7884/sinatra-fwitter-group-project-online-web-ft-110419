@@ -5,6 +5,7 @@
   <% Tweet.all.each do |tweet| %>
     <li>
       <%= tweet.content %>
+      <a href="/tweets/<%=tweets.id%>">show</a>
     </li>
 
     <form action="/tweets/<%=current_user.id%>/delete" method="post"> <br>
